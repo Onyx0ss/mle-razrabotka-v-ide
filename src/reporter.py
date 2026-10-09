@@ -27,7 +27,7 @@ class DataFrameReporter:
         # в формате float_format
         print('Доля пропусков:', format(df.isna().sum().sum() / df.size, self.float_format))
 
-data = pd.read_csv('payments.csv')
+data = pd.read_csv('data/payments.csv')
 
 # не нужно менять код ниже - он для проверки правильности работы show_report с разными настройками
 reporter_1 = DataFrameReporter(float_format='0.02f', percent_format='0.03%')
